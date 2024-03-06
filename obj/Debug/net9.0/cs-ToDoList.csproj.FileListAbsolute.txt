@@ -1,0 +1,15 @@
+C:\Users\italo\js pjt inicio\backend\csharp\cs-ToDoList\bin\Debug\net9.0\cs-ToDoList.exe
+C:\Users\italo\js pjt inicio\backend\csharp\cs-ToDoList\bin\Debug\net9.0\cs-ToDoList.deps.json
+C:\Users\italo\js pjt inicio\backend\csharp\cs-ToDoList\bin\Debug\net9.0\cs-ToDoList.runtimeconfig.json
+C:\Users\italo\js pjt inicio\backend\csharp\cs-ToDoList\bin\Debug\net9.0\cs-ToDoList.dll
+C:\Users\italo\js pjt inicio\backend\csharp\cs-ToDoList\bin\Debug\net9.0\cs-ToDoList.pdb
+C:\Users\italo\js pjt inicio\backend\csharp\cs-ToDoList\obj\Debug\net9.0\cs-ToDoList.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\italo\js pjt inicio\backend\csharp\cs-ToDoList\obj\Debug\net9.0\cs-ToDoList.AssemblyInfoInputs.cache
+C:\Users\italo\js pjt inicio\backend\csharp\cs-ToDoList\obj\Debug\net9.0\cs-ToDoList.AssemblyInfo.cs
+C:\Users\italo\js pjt inicio\backend\csharp\cs-ToDoList\obj\Debug\net9.0\cs-ToDoList.csproj.CoreCompileInputs.cache
+C:\Users\italo\js pjt inicio\backend\csharp\cs-ToDoList\obj\Debug\net9.0\cs-ToDoList.sourcelink.json
+C:\Users\italo\js pjt inicio\backend\csharp\cs-ToDoList\obj\Debug\net9.0\cs-ToDoList.dll
+C:\Users\italo\js pjt inicio\backend\csharp\cs-ToDoList\obj\Debug\net9.0\refint\cs-ToDoList.dll
+C:\Users\italo\js pjt inicio\backend\csharp\cs-ToDoList\obj\Debug\net9.0\cs-ToDoList.pdb
+C:\Users\italo\js pjt inicio\backend\csharp\cs-ToDoList\obj\Debug\net9.0\cs-ToDoList.genruntimeconfig.cache
+C:\Users\italo\js pjt inicio\backend\csharp\cs-ToDoList\obj\Debug\net9.0\ref\cs-ToDoList.dll
