@@ -11,7 +11,7 @@ namespace java2kkkk
         {
             if (addTask.Tasks.Count == 0) 
             {
-                Console.WriteLine("No tasks to remove.");
+                Console.WriteLine("No tasks to remove.\n");
             }
             else 
             {
@@ -19,9 +19,19 @@ namespace java2kkkk
                 if (int.TryParse(Console.ReadLine(), out int index) && index > 0 && index <= addTask.Tasks.Count) 
                 {
                     addTask.Tasks.RemoveAt(index - 1);
-                    Console.WriteLine("Task removed sucessfully!");
+                    Console.Write("--- Task removed ");
+                    Console.ForegroundColor = ConsoleColor.DarkGreen;
+                    Console.Write("sucessfully!");
+                    Console.ResetColor();
+                    Console.WriteLine(" ---\n");
                 }
-                else { Console.WriteLine("Invalid task number."); }
+                else 
+                { 
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                    Console.Write("Invalid ");
+                    Console.ResetColor();
+                    Console.WriteLine("task ID.");
+                }
             }
         }
     }

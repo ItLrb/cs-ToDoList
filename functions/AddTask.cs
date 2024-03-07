@@ -8,21 +8,40 @@ namespace java2kkkk
     public class addTask
     {
         public string TaskTittle { get; set; } = "No Name";
-        public static List<string> Tasks = new List<string> { "No Tasks" };
-        public addTask(string taskTittle) 
+        public static List<string> Tasks = new List<string>();
+        public DateTime ReminderDate { get; set; }
+        public addTask(string taskTittle, DateTime reminderDate) 
         {
             TaskTittle = taskTittle;
+            ReminderDate = reminderDate;
         }
+
+        public override string ToString()
+        {
+            return $"{TaskTittle} - {ReminderDate}";
+        }
+
         public void AddTask() 
         {
             try 
             {
-                if (TaskTittle.Length != 0 || TaskTittle.Length !> 50)
+                if (string.IsNullOrEmpty(TaskTittle) && TaskTittle.Length !> 50)
                 {
                     Tasks.Add(TaskTittle);
-                    Console.WriteLine("Task added sucessufully!");
+                    Console.Write("--- Task added ");
+                    Console.ForegroundColor = ConsoleColor.DarkGreen;
+                    Console.Write("sucessfully!");
+                    Console.ResetColor();
+                    Console.WriteLine(" ---\n");
                 }
-                else { Console.WriteLine("Task not added, something is wrong."); }
+                else 
+                { 
+                    Console.Write("Task ");
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                    Console.Write("not added");
+                    Console.ResetColor();
+                    Console.WriteLine(", something is wrong.\n");
+                }
             }
             catch (Exception e) { Console.WriteLine(e.Message); }
         }
