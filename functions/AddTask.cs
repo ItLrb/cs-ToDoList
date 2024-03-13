@@ -9,23 +9,16 @@ namespace java2kkkk
     {
         public string TaskTittle { get; set; } = "No Name";
         public static List<string> Tasks = new List<string>();
-        public DateTime ReminderDate { get; set; }
-        public addTask(string taskTittle, DateTime reminderDate) 
+        public addTask(string taskTittle) 
         {
             TaskTittle = taskTittle;
-            ReminderDate = reminderDate;
-        }
-
-        public override string ToString()
-        {
-            return $"{TaskTittle} - {ReminderDate}";
         }
 
         public void AddTask() 
         {
             try 
             {
-                if (string.IsNullOrEmpty(TaskTittle) && TaskTittle.Length !> 50)
+                if (TaskTittle.Length > 0 || TaskTittle.Length <= 50)
                 {
                     Tasks.Add(TaskTittle);
                     Console.Write("--- Task added ");

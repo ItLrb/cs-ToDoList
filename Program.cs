@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using cs_ToDoList.functions.reminder;
+using cs_ToDoList.functions.checkTask;
 
 namespace java2kkkk
 {
     class Program
     {
-        static Timer reminderTimer = new Timer(ReminderTask.CheckReminders, addTask.Tasks, TimeSpan.Zero, TimeSpan.FromMinutes(1));
         static void Main(string[] args)
         {
             while (true) 
@@ -15,7 +14,8 @@ namespace java2kkkk
                 Console.WriteLine("1. Add Task");
                 Console.WriteLine("2. Verify your tasks");
                 Console.WriteLine("3. Delete Task");
-                Console.WriteLine("4. Exit");
+                Console.WriteLine("4. Confirm Task");
+                Console.WriteLine("5. Exit");
                 
                 Console.Write("Choose an option : ");
                 int choosedOption = Convert.ToInt32(Console.ReadLine());
@@ -26,14 +26,10 @@ namespace java2kkkk
                     case 1:
                         Console.Write("Write your task tittle : ");
                         string? taskName = Console.ReadLine();
-                        Console.Write("Enter the reminder date (yyyy-mm-dd HH:mm): ");
-                        if (DateTime.TryParse(Console.ReadLine(), out DateTime reminderDate)) 
+                        if (taskName != null) 
                         {
-                            if (taskName != null) 
-                            {
-                                addTask addTask = new addTask(taskName, reminderDate);
-                                addTask.AddTask();
-                            }
+                            addTask addTask = new addTask(taskName);
+                            addTask.AddTask();
                         }
                         break;
                     case 2:
@@ -55,8 +51,11 @@ namespace java2kkkk
                         deleteTask.DeleteTask();
                         break;
                     case 4:
+                        confirmTask confirmTask = new confirmTask();
+                        confirmTask.ConfirmTask();
+                        break;
+                    case 5:
                         Console.WriteLine("Exiting...");
-                        reminderTimer.Dispose();
                         Environment.Exit(0);
                         break;
                     default:
